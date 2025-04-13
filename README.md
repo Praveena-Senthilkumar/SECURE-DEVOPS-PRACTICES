@@ -25,6 +25,9 @@ This project demonstrates the integration of **OWASP ZAP** and **GitHub Actions*
 - **OWASP ZAP**
 - *(Optionally: SonarQube for static analysis)*
 
+
+![Image](https://github.com/user-attachments/assets/7a29ac29-1a5c-4934-bfce-b3fb28c6bceb)
+
 ## 🚀 How It Works
 
 On every push to the `main` branch, the GitHub Actions workflow (`.github/workflows/secure.yml`) triggers a security scan using OWASP ZAP.
