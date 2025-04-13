@@ -1,0 +1,19 @@
+name: CI with Security Scanning
+
+on:
+  push:
+    branches:
+      - main  # Triggers the workflow when you push to main
+
+jobs:
+  zap-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run OWASP ZAP Baseline Scan
+        uses: zaproxy/action-baseline@v0.7.0
+        with:
+          target: 'http://example.com'  # You can change this to your deployed app URL
+
